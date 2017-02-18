@@ -1,0 +1,11 @@
+import os
+
+    
+files  = open('/var/log/syslog','r')
+reads = files.readlines()
+for i in reads:
+    vocab = i.split()
+    print(vocab[:3])
+
+
+
